@@ -1,0 +1,12 @@
+! 屏蔽之后创维自带的影音在线功能就不能用了
+! 这时候，可以用盒子
+! 2018年2月10日 19:04:24
+! 创维
+||update01.skyworth-cloud.com
+||hoisin.coocaatv.com
+||sky.fs.skysrt.com
+||res.hoisin.coocaatv.com
+|log.skysrt.com
+||apk.sky.fs.skysrt.com
+
+||api.device.skysrt.com
