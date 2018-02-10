@@ -6,7 +6,7 @@
 ||hoisin.coocaatv.com
 ||sky.fs.skysrt.com
 ||res.hoisin.coocaatv.com
-|log.skysrt.com
+||log.skysrt.com
 ||apk.sky.fs.skysrt.com
 
 ||api.device.skysrt.com
