@@ -1,9 +1,0 @@
-﻿
-127.0.0.1 update01.skyworth-cloud.com
-127.0.0.1 hoisin.coocaatv.com
-127.0.0.1 sky.fs.skysrt.com
-127.0.0.1 res.hoisin.coocaatv.com
-127.0.0.1 log.skysrt.com
-127.0.0.1 apk.sky.fs.skysrt.com
-
-127.0.0.1 api.device.skysrt.com
