@@ -1,0 +1,28 @@
+[
+	{ "keys": ["ctrl+s"], "command": "save" },
+
+	{ "keys": ["ctrl+x"], "command": "cut" },
+	{ "keys": ["ctrl+c"], "command": "copy" },
+	{ "keys": ["ctrl+v"], "command": "paste" },
+
+	{ "keys": ["ctrl+z"], "command": "undo" },
+	{ "keys": ["ctrl+shift+z"], "command": "redo" },
+	{ "keys": ["ctrl+y"], "command": "redo_or_repeat" },
+	{ "keys": ["ctrl+u"], "command": "soft_undo" },
+	{ "keys": ["ctrl+shift+u"], "command": "soft_redo" },
+
+	{ "keys": ["ctrl+a"], "command": "select_all" },
+
+	{ "keys": ["ctrl+d"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+
+	{ "keys": ["ctrl+f"], "command": "show_panel", "args": {"panel": "find", "reverse": false} },
+
+	{ "keys": ["ctrl+super+down"], "command": "duplicate_line" },
+
+	{ "keys": ["super+up"], "command": "swap_line_up" },
+	{ "keys": ["super+down"], "command": "swap_line_down" },
+
+	{ "keys": ["ctrl+forward_slash"], "command": "toggle_comment", "args": { "block": false } },
+	{ "keys": ["ctrl+super+forward_slash"], "command": "toggle_comment", "args": { "block": true } },
+
+]
