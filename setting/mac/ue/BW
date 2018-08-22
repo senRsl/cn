@@ -1,0 +1,8 @@
+13,ue
+2018-08-01 增加18.00.0.30
+
+去官网下载原载，先运行一次，再在终端里执行下面代码就可以破解完成！
+printf '\x31\xC0\xFF\xC0\xC3\x90' | dd seek=$((0x76B7C0)) conv=notrunc bs=1 of=/Applications/UltraEdit.app/Contents/MacOS/UltraEdit
+
+
+
