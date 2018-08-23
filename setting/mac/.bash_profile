@@ -2,7 +2,10 @@ export ANDROID_HOME=~/Library/Android/sdk
 #export ANDROID_HOME=~/android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
-export PATH=${PATH}:${ANDROID_HOME}/ndk-bundle
+#export PATH=${PATH}:${ANDROID_HOME}/ndk-bundle
+export NDK_HOME=~/android/android-ndk-r14b
+export PATH=${PATH}:${NDK_HOME}
+
 # Setting PATH for Python 3.6
 # The original version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.6/bin:${PATH}"
