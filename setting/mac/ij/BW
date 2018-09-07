@@ -25,3 +25,17 @@ xclient.info/a/f0b9738a-36fd-8a97-a966-0d3db497092d.html?t=3c81a732903eb7e513f7c
 
 3）选择activity code，拷入activationCode内容，即可。
 
+----------------------
+
+
+
+导入设置
+
+settings.jar这种方式啊，有点坑
+
+好吧，拆了下导出来的jar包，只是as的导入导出有点坑
+
+lij的还可以，导出来四项导入就提示四项，不像as。。。。
+
+
+

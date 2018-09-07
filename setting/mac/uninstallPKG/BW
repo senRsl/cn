@@ -1,0 +1,55 @@
+修改/Users/senrsl/Library/Preferences/com.corecode.UninstallPKG.plist
+里的 Usages为 -99999999
+就可以了，只要一直小于5，就可以一直试用
+
+文件是 .plist格式，
+可以使用 PlistEdit Pro.app 修改
+也可以使用 plutil命令修改
+
+命令行是系统内置的
+
+#查看命令，-h不是个有效命令
+SENRSL:uninstallPKG senrsl$ plutil -h
+
+#格式检查
+SENRSL:uninstallPKG senrsl$ plutil -lint /Users/senrsl/Library/Preferences/com.corecode.UninstallPKG.plist 
+/Users/senrsl/Library/Preferences/com.corecode.UninstallPKG.plist: OK
+#json格式输出内容
+SENRSL:uninstallPKG senrsl$ plutil -p /Users/senrsl/Library/Preferences/com.corecode.UninstallPKG.plist 
+{
+  。。。。
+  "isRunningOnRootless" => 1
+  "launchDate" => 2018-08-23 13:22:50 +0000
+  "Launches" => 4
+  "NSInitialToolTipDelay" => 1
+  "SUEnableAutomaticChecks" => 1
+  "SUHasLaunchedBefore" => 1
+  "SULastCheckTime" => 2018-08-23 13:13:05 +0000
+  "SUScheduledCheckInterval" => 172800
+  "UninstalledFiles" => 2
+  "UninstalledPKGs" => 2
+  "UpdatecheckMenuindex" => 2
+  "Usages" => -99999999
+}
+#替换
+SENRSL:uninstallPKG senrsl$ plutil -replace Usages -integer -9999998 /Users/senrsl/Library/Preferences/com.corecode.UninstallPKG.plist 
+SENRSL:uninstallPKG senrsl$ plutil -p /Users/senrsl/Library/Preferences/com.corecode.UninstallPKG.plist 
+{
+  。。。。
+  "isRunningOnRootless" => 1
+  "launchDate" => 2018-08-23 13:22:50 +0000
+  "Launches" => 4
+  "NSInitialToolTipDelay" => 1
+  "SUEnableAutomaticChecks" => 1
+  "SUHasLaunchedBefore" => 1
+  "SULastCheckTime" => 2018-08-23 13:13:05 +0000
+  "SUScheduledCheckInterval" => 172800
+  "UninstalledFiles" => 2
+  "UninstalledPKGs" => 2
+  "UpdatecheckMenuindex" => 2
+  "Usages" => -9999998
+}
+SENRSL:uninstallPKG senrsl$ 
+
+
+

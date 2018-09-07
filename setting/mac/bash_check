@@ -1,0 +1,60 @@
+Last login: Thu Aug 23 16:35:25 on ttys001
+SENRSL:~ senrsl$ adb --version
+Android Debug Bridge version 1.0.39
+Version 0.0.1-4500957
+Installed as /Users/senrsl/android/sdk/platform-tools/adb
+SENRSL:~ senrsl$ ndk-buid -version
+-bash: ndk-buid: command not found
+SENRSL:~ senrsl$ ndk-build --version
+GNU Make 3.81
+Copyright (C) 2006  Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.
+There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.
+
+This program built for x86_64-apple-darwin
+SENRSL:~ senrsl$ gradle -version
+
+Welcome to Gradle 4.8!
+
+Here are the highlights of this release:
+ - Dependency locking
+ - Maven Publish and Ivy Publish plugins improved and marked stable
+ - Incremental annotation processing enhancements
+ - APIs to configure tasks at creation time
+
+For more details see https://docs.gradle.org/4.8/release-notes.html
+
+
+------------------------------------------------------------
+Gradle 4.8
+------------------------------------------------------------
+
+Build time:   2018-06-04 10:39:58 UTC
+Revision:     9e1261240e412cbf61a5e3a5ab734f232b2f887d
+
+Groovy:       2.4.12
+Ant:          Apache Ant(TM) version 1.9.11 compiled on March 23 2018
+JVM:          1.8.0_172 (Oracle Corporation 25.172-b11)
+OS:           Mac OS X 10.13.6 x86_64
+
+SENRSL:~ senrsl$ meld --version
+/Users/senrsl/tools/Meld.app/Contents/MacOS
+meld 3.19.0
+SENRSL:~ senrsl$ mvn -version
+Apache Maven 3.5.3 (3383c37e1f9e9b3bc3df5050c29c8aff9f295297; 2018-02-25T03:49:05+08:00)
+Maven home: /Users/senrsl/tools/apache-maven-3.5.3
+Java version: 1.8.0_172, vendor: Oracle Corporation
+Java home: /Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre
+Default locale: zh_CN, platform encoding: UTF-8
+OS name: "mac os x", version: "10.13.6", arch: "x86_64", family: "mac"
+SENRSL:~ senrsl$ 
+
+
+
+
+
+
+
+
+
