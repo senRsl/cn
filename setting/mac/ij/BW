@@ -16,11 +16,11 @@ xclient.info/a/f0b9738a-36fd-8a97-a966-0d3db497092d.html?t=3c81a732903eb7e513f7c
 3方法一直失效，尝试1
 
 使用1方法，放jar文件的目录不要藏太深，不然会找不到。
-1）文件 /Users/zhaoyuming/android/IntelliJ IDEA.app/Contents/bin/idea.vmoptions
+1）文件 /Users/senrsl/android/IntelliJ IDEA.app/Contents/bin/idea.vmoptions
 最后增加一行：
-	-javaagent:/Users/zhaoyuming/temp/JetbrainsLicense.jar
+	-javaagent:/Users/senrsl/test/cn/setting/mac/ij/JetbrainsCrack-3.1-release-enc.jar
 
-2）启动/Users/zhaoyuming/android/IntelliJ IDEA.app/Contents/MacOS/idea
+2）启动/Users/senrsl/android/IntelliJ IDEA.app/Contents/MacOS/idea
 如果有错误，可以在命令行看到错误
 
 3）选择activity code，拷入activationCode内容，即可。
