@@ -1,0 +1,15 @@
+特么的,竟然是个pkg安装包....
+
+SENRSL:~ senrsl$ md5 Downloads/astah-pro.jar
+MD5 (Downloads/astah-pro.jar) = 16b5568b6a01013996323b12ad2019e2
+SENRSL:~ senrsl$ md5 Downloads/astah-professional-7_2_0-1ff236-MacOs.dmg 
+MD5 (Downloads/astah-professional-7_2_0-1ff236-MacOs.dmg) = 820b2e0130028a3a2cec2e7ddbb8b084
+SENRSL:~ senrsl$ 
+
+SENRSL:~ senrsl$ md5 /Applications/astah\ professional/astah\ professional.app/Contents/Java/astah-pro.jar 
+MD5 (/Applications/astah professional/astah professional.app/Contents/Java/astah-pro.jar) = 16b5568b6a01013996323b12ad2019e2
+SENRSL:~ senrsl$ 
+
+安装之后,不要打开程序,先替换掉pro.jar,之后再首次打开程序.
+
+啰嗦啊....
