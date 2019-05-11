@@ -1,0 +1,38 @@
+<html>
+<head>
+	
+
+</head>
+<body>
+	a
+
+	<div id="saying">
+		<p id="saying_content">:D 获取中...</p>
+		<span id="saying_from" style="float: right;"></span>
+	</div>
+<!-- 以下写法，选取一种即可 -->
+
+
+
+<!-- 老式写法，兼容性最忧 -->
+<script>
+  var xhr = new XMLHttpRequest();
+  xhr.open('get', 'https://v1.hitokoto.cn');
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+      var data = JSON.parse(xhr.responseText);
+      var saying_content = document.getElementById('saying_content');
+      saying_content.innerText = data.hitokoto ; 
+       var saying_from = document.getElementById('saying_from');
+      saying_from.innerText = "--"+data.from ;
+    }
+  }
+  xhr.send();
+</script>
+
+<!-- 新 API 方法， 十分简洁 
+<script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+-->
+
+</body>
+</html>
