@@ -1,0 +1,1 @@
+var uri_shower="https://api.66mz8.com/api/taobaoimg.php";
