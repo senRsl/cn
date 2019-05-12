@@ -1,0 +1,45 @@
+<html>
+<head>
+	
+
+</head>
+<body>
+	a
+
+	<div id="history_today">
+		<p id="ht_title">:D 获取中...</p>
+		<p id="ht_content" style="text-align:left"></p>
+	</div>
+<!-- 以下写法，选取一种即可 -->
+
+
+跨域！！！
+<!-- 老式写法，兼容性最忧 -->
+<script>
+  var xhr = new XMLHttpRequest();
+  // xhr.open('get', 'https://www.ipip5.com/today/api.php?type=json');
+  // xhr.open('get', 'https://history.muffinlabs.com/date');
+  xhr.open('get', 'https://api.66mz8.com/api/today.php?format=json');
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+      var data = JSON.parse(xhr.responseText);
+      if(200 == data.code){
+      var ht_title = document.getElementById('ht_title');
+      ht_title.innerText = data.day ;
+
+      var ht_content = document.getElementById('ht_content');
+      var arrContent = data.content;
+
+      for (var i = arrContent.length - 1; i >= 0; i--) {
+        ht_content.innerText += arrContent[i]+"\n";
+      }
+      }
+
+    }
+  }
+  xhr.send();
+</script>
+
+
+</body>
+</html>
