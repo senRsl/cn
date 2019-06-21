@@ -1,0 +1,44 @@
+<html>
+<head>
+	
+
+<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+<script type="text/javascript">
+
+
+</script>
+
+</head>
+<body >
+	a
+  <!-- https://v2.jinrishici.com/one.json -->
+
+<p>刷新是解决问题的不二法宝</p>
+<br/>
+<span id="jrsc"></span>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<script type="text/javascript">
+  jinrishici.load(function(result) {
+    // 自己的处理逻辑
+    //console.log(result);
+
+    if("success"==result.status){
+      document.getElementById("jrsc").innerHTML = "<p align='center'><b>"+result.data.origin.title+" : "+result.data.origin.author+"【"+result.data.origin.dynasty+"】</b></p><br/><br/><p>";
+
+      for (var i = 0; i < result.data.origin.content.length; i++) {
+        document.getElementById("jrsc").innerHTML += result.data.origin.content[i] +"<br/>";
+      }
+      document.getElementById("jrsc").innerHTML +="</p>";
+    }
+  });
+</script>
+
+<img src="https://api.66mz8.com/api/taobaoimg.php"/>
+	
+
+
+
+
+
+</body>
+</html>
