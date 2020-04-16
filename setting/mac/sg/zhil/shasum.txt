@@ -1,0 +1,1 @@
+7dce88f930052daf7dd3775ccda8a47fca9e5750  smartgit-agent.jar

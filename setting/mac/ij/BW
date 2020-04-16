@@ -39,3 +39,15 @@ lij的还可以，导出来四项导入就提示四项，不像as。。。。
 
 
 
+--------从2018.2新安装2020.1
+2020年04月16日13:59:14
+
+如果直接安装，会报错，大概跟2018 crack包有关。
+这俩路径
+/Users/senrsl/Library/Preferences/IntelliJIdea2018.2
+/Users/senrsl/Library/Application Support/IntelliJIdea2018.2
+文件夹前面给他加个a,这样新装的2020就找不到2018的配置了，2020就是全新安装。
+然后再去导入2018的配置就行了。
+
+另外2020的crack需要改idea.vmoptions,这个文件不在Preferences下面了，变到了
+/Users/senrsl/Library/Application Support/JetBrains/IntelliJIdea2020.1目录
