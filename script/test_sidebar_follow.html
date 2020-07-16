@@ -1,0 +1,187 @@
+<html>
+<title>右侧吸顶</title>
+<head>
+
+    <style type="text/css">
+
+        /*侧栏跟随*/
+
+        /*#box {*/
+        /*float: left;*/
+        /*position: relative;*/
+        /*width: 250px;*/
+        /*}*/
+
+        /*.div1 {*/
+        /*width: 250px;*/
+        /*background: #009dfe;*/
+        /*}*/
+
+        /*.div2 {*/
+        /*position: fixed;*/
+        /*_position: absolute;*/
+        /*top: 0;*/
+        /*z-index: 999;*/
+        /*background: #00FFFF;*/
+        /*}*/
+
+        #box {
+            position: relative;
+            float: right;
+            width: 100%;
+            padding-left: 10px;
+        }
+
+        .div2 {
+            position: fixed;
+            _position: absolute;
+            top: 0;
+            z-index: 250;
+            width: 300px;
+            background: #ffb6b1;
+        }
+
+        .div1 {
+            width: 100%;
+            background: #009dfe;
+        }
+
+        .sidebar_right {
+            float: right;
+            width: 300px;
+            height: 100%;
+            overflow: hidden;
+            /*margin-left: -306px;*/
+            padding-left: 5px;
+        }
+
+        .author {
+            background-color: #FEFCF4;
+            margin-top: 10px;
+            border: 1px solid #FCBB90;
+            font-size: 14px;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        /*#container {*/
+        /*width: 1380px;*/
+        /*margin: auto;*/
+        /*table-layout: fixed;*/
+        /*word-break: break-all;*/
+        /*overflow: hidden;*/
+        /*background-color: #FFF;*/
+        /*}*/
+
+    </style>
+
+
+</head>
+<body>
+
+
+<div id="container" style="height: 5000px;">
+
+    <!--<div style="width: 100%; height: 100px; background: #666660;">-->
+    <!--</div>-->
+    <!--<div style="width: 100px; height: 1000px; background: #333333;">-->
+    <!--</div>-->
+    <!--<div style="width: 200px; height: 1000px; background: #666666;">-->
+    <!--</div>-->
+    <!--<div style="width: 300px; height: 1000px; background: #999999;">-->
+    <!--</div>-->
+
+    <!--<div id="box">
+
+        <div id="float" class="div1">
+
+            这里写你网站的代码与标签。
+
+        </div>
+    </div>-->
+
+
+    <div class="sidebar_right">
+
+        <div class="author">
+            bbbbbb
+        </div>
+
+        <div id="box">
+            <div id="float" class="div1">
+                <p>内容啊啊啊啊啊</p>
+                <p>内容啊啊啊啊啊</p>
+                <p>内容啊啊啊啊啊</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript">
+
+
+    // //侧栏跟随
+    //
+    // (function () {
+    //
+    //     var oDiv = document.getElementById("float");
+    //     var H = 0, iE6;
+    //     var Y = oDiv;
+    //     while (Y) {
+    //         H += Y.offsetTop;
+    //         Y = Y.offsetParent
+    //     }
+    //     ;
+    //     iE6 = window.ActiveXObject && !window.XMLHttpRequest;
+    //     if (!iE6) {
+    //         window.onscroll = function () {
+    //             var s = document.body.scrollTop || document.documentElement.scrollTop;
+    //
+    //             if (s > H) {
+    //                 //alert(s);
+    //                 oDiv.className = "div1 div2";
+    //                 if (iE6) {
+    //                     oDiv.style.top = (s - H) + "px";
+    //                 }
+    //             }
+    //             else {
+    //                 oDiv.className = "div1";
+    //             }
+    //         };
+    //     }
+    //
+    // })();
+
+    //跟随
+    (function () {
+        var oDiv = document.getElementById("float");
+        var H = 0,
+            iE6;
+        var Y = oDiv;
+        while (Y) {
+            H += Y.offsetTop;
+            Y = Y.offsetParent
+        }
+        ;
+        iE6 = window.ActiveXObject && !window.XMLHttpRequest;
+        if (!iE6) {
+            window.onscroll = function () {
+                var s = document.body.scrollTop || document.documentElement.scrollTop;
+                if (s > H) {
+                    oDiv.className = "div1 div2";
+                    if (iE6) {
+                        oDiv.style.top = (s - H) + "px";
+                    }
+                } else {
+                    oDiv.className = "div1";
+                }
+            };
+        }
+    })();
+
+</script>
+
+
+</body>
+</html>
