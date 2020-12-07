@@ -56,3 +56,17 @@ lij的还可以，导出来四项导入就提示四项，不像as。。。。
 2020年08月28日11:17:47
 idea.vmoptions这个文件可以通过idea菜单Help->Edit Custom Options生成。
 用的这个JetbrainsIdesCrack_5_3_1_KeepMyLic.jar只到2021.1.4号过期，没几个月，还得找新方案。
+
+
+----更新 MacOS Big Sur，发现xml格式化没反应了。。。  
+备份之前的crack配置为：  
+-javaagent:/Users/senrsl/test/cn/setting/mac/ij/2020.2/JetbrainsIdesCrack_5_3_1_KeepMyLic.jar  
+
+然后找了一遭，升级版本从2020.2.3 到 2020.2.4：
+1. Editor -> CodeStyle -> xml 的所有配置项都得加上attribute选项;
+2. 菜单 Code -> Reformat File 因为之前bug(每次格式化xml会自动变换View中组件的顺序，导致布局错乱),取消了 Optional->Rerrange code，现在再勾回来，看起来2020.2.4修复了这个bug;
+改完这俩配置，再去重新格式化代码就跟之前的一样了。
+
+本想 再导出一份settings,发现 配置了github的自动同步，就不能export了。
+
+
