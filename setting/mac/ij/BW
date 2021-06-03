@@ -70,3 +70,19 @@ idea.vmoptions这个文件可以通过idea菜单Help->Edit Custom Options生成�
 本想 再导出一份settings,发现 配置了github的自动同步，就不能export了。
 
 
+-------------- 新安装2021.1
+2021年06月03日18:29:22
+
+本机存在2018.2、2020.2。
+先改之前的配置文件，文件夹名字前加a，防止新安装的找到
+2018的：
+/Users/senrsl/Library/Preferences/IntelliJIdea2018.2
+/Users/senrsl/Library/Application Support/IntelliJIdea2018.2
+2020的：
+/Users/senrsl/Library/Application Support/JetBrains
+
+然后再去首次打开 新版本。2021的配置目录同2020一样。
+发现依然没有解决引用项目外子模块问题，目录依然很乱而且重复，删掉继续用2018写旧项目。
+
+
+
